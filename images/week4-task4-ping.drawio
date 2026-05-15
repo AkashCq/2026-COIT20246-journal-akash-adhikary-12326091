@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net" agent="draw.io">
+  <diagram id="ping" name="Week4-Task4-Ping">
+    <mxGraphModel dx="1373" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="760" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="100" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontStyle=1;fontColor=#1e4d78;" value="Ping Packet Capture — Network Diagram (Week 4 Task 4)" vertex="1">
+          <mxGeometry height="50" width="900" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="120" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;VirtualBox Host-Only Network&lt;/b&gt;&lt;br&gt;Network: 192.168.56.0/24&lt;br&gt;(Virtual Ethernet Segment)" vertex="1">
+          <mxGeometry height="120" width="420" x="490" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="110" parent="1" style="shape=mxgraph.cisco.computers_and_peripherals.pc;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;fontSize=13;fontStyle=1;" value="Windows 10 Host" vertex="1">
+          <mxGeometry height="50" width="69" x="130" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="111" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;fontSize=11;spacingLeft=6;rounded=1;whiteSpace=wrap;" value="&lt;b&gt;Interface:&lt;/b&gt; VirtualBox Host-Only Adapter&lt;br&gt;&lt;b&gt;IP Address:&lt;/b&gt; 192.168.56.1 /24&lt;br&gt;&lt;b&gt;MAC Address:&lt;/b&gt; 0A:00:27:00:00:01&lt;br&gt;&lt;b&gt;OS:&lt;/b&gt; Windows 10" vertex="1">
+          <mxGeometry height="80" width="270" x="29.5" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="115" parent="1" style="shape=mxgraph.cisco.routers.router;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#67AB9F;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;fontSize=13;fontStyle=1;" value="OpenWRT Linux VM" vertex="1">
+          <mxGeometry height="50" width="69" x="1200" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="116" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;fontSize=11;spacingLeft=6;rounded=1;whiteSpace=wrap;" value="&lt;b&gt;Interface:&lt;/b&gt; eth0 (VirtualBox NAT / Host-Only)&lt;br&gt;&lt;b&gt;IP Address:&lt;/b&gt; 192.168.56.2 /24&lt;br&gt;&lt;b&gt;MAC Address:&lt;/b&gt; 08:00:27:AB:CD:EF&lt;br&gt;&lt;b&gt;OS:&lt;/b&gt; OpenWRT Linux" vertex="1">
+          <mxGeometry height="80" width="270" x="1099.5" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="130" parent="1" style="text;html=1;strokeColor=#d6b656;fillColor=#fffacd;align=center;verticalAlign=middle;fontSize=11;rounded=1;" value="ICMP Echo Request (ping)&lt;br&gt;src: 192.168.56.1 → dst: 192.168.56.2" vertex="1">
+          <mxGeometry height="50" width="480" x="460" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="131" parent="1" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;fontSize=11;rounded=1;" value="ICMP Echo Reply&lt;br&gt;src: 192.168.56.2 → dst: 192.168.56.1" vertex="1">
+          <mxGeometry height="50" width="480" x="460" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="132" parent="1" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=top;fontSize=11;spacingLeft=6;rounded=1;whiteSpace=wrap;" value="&lt;b&gt;ARP:&lt;/b&gt; Before ping, Windows broadcasts ARP Request&lt;br&gt;&quot;Who has 192.168.56.2? Tell 192.168.56.1&quot;&lt;br&gt;OpenWRT replies with its MAC: 08:00:27:AB:CD:EF" vertex="1">
+          <mxGeometry height="70" width="420" x="490" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="200" edge="1" parent="1" source="110" style="endArrow=none;html=1;strokeWidth=3;strokeColor=#036897;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="201" edge="1" parent="1" source="120" style="endArrow=none;html=1;strokeWidth=3;strokeColor=#67AB9F;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="202" edge="1" parent="1" source="110" style="endArrow=block;endFill=1;html=1;strokeWidth=2;strokeColor=#d79b00;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="115">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="220" />
+              <mxPoint x="1235" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="203" edge="1" parent="1" source="115" style="endArrow=block;endFill=1;html=1;strokeWidth=2;strokeColor=#375623;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="110">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1235" y="500" />
+              <mxPoint x="165" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

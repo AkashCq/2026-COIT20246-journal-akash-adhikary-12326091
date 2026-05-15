@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="draw.io">
+  <diagram id="arppkt2" name="Week4-Task4-ARP-Packet">
+    <mxGraphModel dx="1373" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1150" pageHeight="780" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#1e4d78;" value="ARP Packet — Encapsulation Diagram  (Week 4  Task 4d)" vertex="1">
+          <mxGeometry height="46" width="1000" x="75" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="text;html=1;strokeColor=#1e4d78;fillColor=#dae8fc;align=center;verticalAlign=middle;fontSize=13;rounded=1;whiteSpace=wrap;" value="Total Ethernet Frame  =  &lt;b&gt;42 Bytes&lt;/b&gt;  (as captured in Wireshark)     +     4 B FCS     =     &lt;b&gt;46 Bytes on wire&lt;/b&gt;" vertex="1">
+          <mxGeometry height="38" width="950" x="100" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e4d78;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;spacingLeft=10;rounded=1;" value="LAYER 2  —  ETHERNET II FRAME  (outer encapsulation)" vertex="1">
+          <mxGeometry height="26" width="950" x="100" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1e4d78;strokeWidth=3;dashed=1;" value="" vertex="1">
+          <mxGeometry height="110" width="950" x="100" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Ethernet Header&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:13px&#39;&gt;14 Bytes&lt;/font&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Dst MAC | Src MAC | EtherType&lt;/font&gt;" vertex="1">
+          <mxGeometry height="106" width="270" x="102" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;ARP Payload&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:13px&#39;&gt;28 Bytes&lt;/font&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Address Resolution Protocol&lt;/font&gt;" vertex="1">
+          <mxGeometry height="106" width="544" x="372" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;strokeWidth=2.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;FCS&lt;/b&gt;&lt;br&gt;4 Bytes&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Frame Check Sequence&lt;/font&gt;" vertex="1">
+          <mxGeometry height="106" width="132" x="916" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontColor=#6c8ebf;fontStyle=1;" value="← 14 B →" vertex="1">
+          <mxGeometry height="16" width="270" x="102" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontColor=#82b366;fontStyle=1;" value="← 28 B →" vertex="1">
+          <mxGeometry height="16" width="544" x="372" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontColor=#d6b656;fontStyle=1;" value="← 4 B →" vertex="1">
+          <mxGeometry height="16" width="132" x="916" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="text;html=1;strokeColor=none;fillColor=#6c8ebf;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;spacingLeft=10;rounded=1;" value="ETHERNET HEADER  —  Field Breakdown" vertex="1">
+          <mxGeometry height="26" width="950" x="100" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Destination MAC Address&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#6c8ebf&#39;&gt;6 Bytes&lt;/font&gt;&lt;br&gt;&lt;br&gt;FF:FF:FF:FF:FF:FF&lt;br&gt;&lt;i&gt;Broadcast — sent to all devices&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="313" x="100" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Source MAC Address&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#6c8ebf&#39;&gt;6 Bytes&lt;/font&gt;&lt;br&gt;&lt;br&gt;0A:00:27:00:00:01&lt;br&gt;&lt;i&gt;Windows Host NIC&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="313" x="419" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;EtherType&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#6c8ebf&#39;&gt;2 Bytes&lt;/font&gt;&lt;br&gt;&lt;br&gt;0x0806&lt;br&gt;&lt;i&gt;Identifies ARP protocol&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="312" x="738" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="text;html=1;strokeColor=none;fillColor=#82b366;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;spacingLeft=10;rounded=1;" value="ARP PAYLOAD  —  Field Breakdown  (28 Bytes Total)" vertex="1">
+          <mxGeometry height="26" width="950" x="100" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Hardware Type&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#82b366&#39;&gt;2 Bytes&lt;/font&gt;&lt;br&gt;&lt;br&gt;0x0001&lt;br&gt;&lt;i&gt;Ethernet&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="190" x="100" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Protocol Type&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#82b366&#39;&gt;2 Bytes&lt;/font&gt;&lt;br&gt;&lt;br&gt;0x0800&lt;br&gt;&lt;i&gt;IPv4&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="190" x="290" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;HW Addr Size&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#82b366&#39;&gt;1 Byte&lt;/font&gt;&lt;br&gt;&lt;br&gt;0x06&lt;br&gt;&lt;i&gt;6 bytes per MAC&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="190" x="480" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="54" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Proto Addr Size&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#82b366&#39;&gt;1 Byte&lt;/font&gt;&lt;br&gt;&lt;br&gt;0x04&lt;br&gt;&lt;i&gt;4 bytes per IP&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="190" x="670" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Opcode&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#82b366&#39;&gt;2 Bytes&lt;/font&gt;&lt;br&gt;&lt;br&gt;0x0001&lt;br&gt;&lt;i&gt;ARP Request&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="190" x="860" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Sender MAC Address&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#82b366&#39;&gt;6 Bytes&lt;/font&gt;&lt;br&gt;&lt;br&gt;0A:00:27:00:00:01&lt;br&gt;&lt;i&gt;Windows Host — the requester&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="237" x="100" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Sender IP Address&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#82b366&#39;&gt;4 Bytes&lt;/font&gt;&lt;br&gt;&lt;br&gt;192.168.56.1&lt;br&gt;&lt;i&gt;Windows Host IP&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="237" x="337" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Target MAC Address&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#82b366&#39;&gt;6 Bytes&lt;/font&gt;&lt;br&gt;&lt;br&gt;00:00:00:00:00:00&lt;br&gt;&lt;i&gt;Unknown — what we are asking for&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="237" x="574" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="64" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;Target IP Address&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px;color:#82b366&#39;&gt;4 Bytes&lt;/font&gt;&lt;br&gt;&lt;br&gt;192.168.56.2&lt;br&gt;&lt;i&gt;OpenWRT — who we are seeking&lt;/i&gt;" vertex="1">
+          <mxGeometry height="86" width="239" x="811" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="70" parent="1" style="text;html=1;strokeColor=#9673a6;fillColor=#f3eef8;align=left;verticalAlign=top;fontSize=11;spacingLeft=10;spacingTop=8;rounded=1;whiteSpace=wrap;" value="&lt;b&gt;ARP Request Purpose:&lt;/b&gt;  The Windows Host (192.168.56.1) does not know the MAC address of the OpenWRT VM (192.168.56.2).  It sends this ARP Request to the broadcast address FF:FF:FF:FF:FF:FF so that every device on the LAN receives it, asking &quot;Who has 192.168.56.2? Tell 192.168.56.1&quot;.&lt;br&gt;OpenWRT recognises its own IP in the Target IP field and responds with an ARP Reply (Opcode 0x0002) sent &lt;u&gt;unicast&lt;/u&gt; back to the Windows Host, including its own MAC address (08:00:27:AB:CD:EF)." vertex="1">
+          <mxGeometry height="80" width="950" x="100" y="648" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

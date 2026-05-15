@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12326091 - Week 6 Page</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <main class="container">
+        <h1>12326091</h1>
+        <p class="student">This is Akash Adhikary's Week 6 Internet Applications page.</p>
+
+        <section class="card">
+            <h2>Student Details</h2>
+            <p><strong>Name:</strong> Akash Adhikary</p>
+            <p><strong>Student ID:</strong> 12326091</p>
+            <p><strong>Unit:</strong> COIT20246 Networking and Cyber Security</p>
+            <p><strong>Topic:</strong> Internet Applications</p>
+        </section>
+
+        <section class="card">
+            <h2>Date and Time Test</h2>
+            <p>Click the button below to display the current date and time using JavaScript.</p>
+            <button onclick="showDateTime()">Show date and time</button>
+            <p id="datetime"></p>
+        </section>
+
+        <p><a href="index.html">Back to Home Page</a></p>
+    </main>
+
+    <script>
+        function showDateTime() {
+            document.getElementById("datetime").innerHTML = Date();
+        }
+    </script>
+</body>
+</html>

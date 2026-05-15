@@ -1,0 +1,247 @@
+<mxfile host="app.diagrams.net" agent="draw.io">
+  <diagram id="w5rt" name="Week5-Task3-RoutingTables">
+    <mxGraphModel dx="1585" dy="866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="10" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#1e4d78;" value="Routing Tables — Week 5 Task 3c" vertex="1">
+          <mxGeometry height="44" width="800" x="350" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="r1title" parent="1" style="text;html=1;strokeColor=none;fillColor=#7030A0;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;spacingLeft=10;rounded=1;" value="Router R1  (eth0: 60.91.0.1/24  |  eth1: 10.0.0.1/24)" vertex="1">
+          <mxGeometry height="30" width="720" x="40" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="r1h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7030A0;fontColor=#ffffff;strokeColor=#ffffff;strokeWidth=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Destination Network" vertex="1">
+          <mxGeometry height="36" width="200" x="40" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r1h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7030A0;fontColor=#ffffff;strokeColor=#ffffff;strokeWidth=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Subnet Mask" vertex="1">
+          <mxGeometry height="36" width="160" x="240" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r1h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7030A0;fontColor=#ffffff;strokeColor=#ffffff;strokeWidth=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Next Hop" vertex="1">
+          <mxGeometry height="36" width="160" x="400" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r1h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7030A0;fontColor=#ffffff;strokeColor=#ffffff;strokeWidth=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Interface" vertex="1">
+          <mxGeometry height="36" width="100" x="560" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r1h5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7030A0;fontColor=#ffffff;strokeColor=#ffffff;strokeWidth=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Type" vertex="1">
+          <mxGeometry height="36" width="100" x="660" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r1c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="60.91.0.0" vertex="1">
+          <mxGeometry height="36" width="200" x="40" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r1c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f0ff;strokeColor=#9673a6;align=center;verticalAlign=middle;fontSize=11;" value="255.255.255.0  (/24)" vertex="1">
+          <mxGeometry height="36" width="160" x="240" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r1c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f0ff;strokeColor=#9673a6;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;" value="— (directly connected)" vertex="1">
+          <mxGeometry height="36" width="160" x="400" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r1c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f0ff;strokeColor=#9673a6;align=center;verticalAlign=middle;fontSize=11;" value="eth0" vertex="1">
+          <mxGeometry height="36" width="100" x="560" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r1c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Connected" vertex="1">
+          <mxGeometry height="36" width="100" x="660" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r2c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="10.0.0.0" vertex="1">
+          <mxGeometry height="36" width="200" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r2c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;" value="255.255.255.0  (/24)" vertex="1">
+          <mxGeometry height="36" width="160" x="240" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r2c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;" value="— (directly connected)" vertex="1">
+          <mxGeometry height="36" width="160" x="400" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r2c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;" value="eth1" vertex="1">
+          <mxGeometry height="36" width="100" x="560" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r2c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Connected" vertex="1">
+          <mxGeometry height="36" width="100" x="660" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r3c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="23.45.0.0" vertex="1">
+          <mxGeometry height="36" width="200" x="40" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r3c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef4ff;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;" value="255.255.255.0  (/24)" vertex="1">
+          <mxGeometry height="36" width="160" x="240" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r3c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef4ff;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;" value="10.0.0.2  (R2 eth0)" vertex="1">
+          <mxGeometry height="36" width="160" x="400" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r3c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef4ff;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;" value="eth1" vertex="1">
+          <mxGeometry height="36" width="100" x="560" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r3c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Static" vertex="1">
+          <mxGeometry height="36" width="100" x="660" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="r2title" parent="1" style="text;html=1;strokeColor=none;fillColor=#7030A0;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;spacingLeft=10;rounded=1;" value="Router R2  (eth0: 10.0.0.2/24  |  eth1: 23.45.0.1/24)" vertex="1">
+          <mxGeometry height="30" width="720" x="760" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="r2h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7030A0;fontColor=#ffffff;strokeColor=#ffffff;strokeWidth=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Destination Network" vertex="1">
+          <mxGeometry height="36" width="200" x="760" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r2h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7030A0;fontColor=#ffffff;strokeColor=#ffffff;strokeWidth=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Subnet Mask" vertex="1">
+          <mxGeometry height="36" width="160" x="960" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r2h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7030A0;fontColor=#ffffff;strokeColor=#ffffff;strokeWidth=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Next Hop" vertex="1">
+          <mxGeometry height="36" width="160" x="1120" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r2h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7030A0;fontColor=#ffffff;strokeColor=#ffffff;strokeWidth=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Interface" vertex="1">
+          <mxGeometry height="36" width="100" x="1280" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r2h5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7030A0;fontColor=#ffffff;strokeColor=#ffffff;strokeWidth=1;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Type" vertex="1">
+          <mxGeometry height="36" width="100" x="1380" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r1c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="23.45.0.0" vertex="1">
+          <mxGeometry height="36" width="200" x="760" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r1c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f7ee;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;" value="255.255.255.0  (/24)" vertex="1">
+          <mxGeometry height="36" width="160" x="960" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r1c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f7ee;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;" value="— (directly connected)" vertex="1">
+          <mxGeometry height="36" width="160" x="1120" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r1c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f7ee;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;" value="eth1" vertex="1">
+          <mxGeometry height="36" width="100" x="1280" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r1c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Connected" vertex="1">
+          <mxGeometry height="36" width="100" x="1380" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r2c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="10.0.0.0" vertex="1">
+          <mxGeometry height="36" width="200" x="760" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r2c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;" value="255.255.255.0  (/24)" vertex="1">
+          <mxGeometry height="36" width="160" x="960" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r2c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;" value="— (directly connected)" vertex="1">
+          <mxGeometry height="36" width="160" x="1120" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r2c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;" value="eth0" vertex="1">
+          <mxGeometry height="36" width="100" x="1280" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r2c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Connected" vertex="1">
+          <mxGeometry height="36" width="100" x="1380" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r3c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="60.91.0.0" vertex="1">
+          <mxGeometry height="36" width="200" x="760" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r3c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef4ff;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;" value="255.255.255.0  (/24)" vertex="1">
+          <mxGeometry height="36" width="160" x="960" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r3c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef4ff;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;" value="10.0.0.1  (R1 eth1)" vertex="1">
+          <mxGeometry height="36" width="160" x="1120" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r3c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef4ff;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;" value="eth0" vertex="1">
+          <mxGeometry height="36" width="100" x="1280" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r3c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Static" vertex="1">
+          <mxGeometry height="36" width="100" x="1380" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#036897;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;spacingLeft=10;rounded=1;" value="LAN A Hosts — PC1, PC2, PC3  (all use same routing table)  |  Interface: eth0  |  Subnet: 60.91.0.0/24" vertex="1">
+          <mxGeometry height="30" width="720" x="40" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#036897;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Destination Network" vertex="1">
+          <mxGeometry height="36" width="200" x="40" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#036897;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Subnet Mask" vertex="1">
+          <mxGeometry height="36" width="160" x="240" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#036897;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Next Hop" vertex="1">
+          <mxGeometry height="36" width="160" x="400" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#036897;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Interface" vertex="1">
+          <mxGeometry height="36" width="100" x="560" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_h5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#036897;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Type" vertex="1">
+          <mxGeometry height="36" width="100" x="660" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_r1c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="60.91.0.0" vertex="1">
+          <mxGeometry height="36" width="200" x="40" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_r1c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef4ff;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;" value="255.255.255.0  (/24)" vertex="1">
+          <mxGeometry height="36" width="160" x="240" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_r1c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef4ff;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;" value="— (directly connected)" vertex="1">
+          <mxGeometry height="36" width="160" x="400" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_r1c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef4ff;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=11;" value="eth0" vertex="1">
+          <mxGeometry height="36" width="100" x="560" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_r1c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Connected" vertex="1">
+          <mxGeometry height="36" width="100" x="660" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_r2c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="0.0.0.0  (default)" vertex="1">
+          <mxGeometry height="36" width="200" x="40" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_r2c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=11;" value="0.0.0.0  (/0)" vertex="1">
+          <mxGeometry height="36" width="160" x="240" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_r2c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=11;" value="60.91.0.1  (R1 eth0)" vertex="1">
+          <mxGeometry height="36" width="160" x="400" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_r2c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=11;" value="eth0" vertex="1">
+          <mxGeometry height="36" width="100" x="560" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pca_r2c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Default" vertex="1">
+          <mxGeometry height="36" width="100" x="660" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_title" parent="1" style="text;html=1;strokeColor=none;fillColor=#375623;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;spacingLeft=10;rounded=1;" value="LAN B Hosts — PC4, PC5  (all use same routing table)  |  Interface: eth0  |  Subnet: 23.45.0.0/24" vertex="1">
+          <mxGeometry height="30" width="720" x="760" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#375623;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Destination Network" vertex="1">
+          <mxGeometry height="36" width="200" x="760" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#375623;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Subnet Mask" vertex="1">
+          <mxGeometry height="36" width="160" x="960" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#375623;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Next Hop" vertex="1">
+          <mxGeometry height="36" width="160" x="1120" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_h4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#375623;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Interface" vertex="1">
+          <mxGeometry height="36" width="100" x="1280" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_h5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#375623;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Type" vertex="1">
+          <mxGeometry height="36" width="100" x="1380" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_r1c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="23.45.0.0" vertex="1">
+          <mxGeometry height="36" width="200" x="760" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_r1c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f7ee;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;" value="255.255.255.0  (/24)" vertex="1">
+          <mxGeometry height="36" width="160" x="960" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_r1c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f7ee;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;fontStyle=2;" value="— (directly connected)" vertex="1">
+          <mxGeometry height="36" width="160" x="1120" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_r1c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f7ee;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;" value="eth0" vertex="1">
+          <mxGeometry height="36" width="100" x="1280" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_r1c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Connected" vertex="1">
+          <mxGeometry height="36" width="100" x="1380" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_r2c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="0.0.0.0  (default)" vertex="1">
+          <mxGeometry height="36" width="200" x="760" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_r2c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=11;" value="0.0.0.0  (/0)" vertex="1">
+          <mxGeometry height="36" width="160" x="960" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_r2c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=11;" value="23.45.0.1  (R2 eth1)" vertex="1">
+          <mxGeometry height="36" width="160" x="1120" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_r2c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=11;" value="eth0" vertex="1">
+          <mxGeometry height="36" width="100" x="1280" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb_r2c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Default" vertex="1">
+          <mxGeometry height="36" width="100" x="1380" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="key" parent="1" style="text;html=1;strokeColor=#1e4d78;fillColor=#f0f4fa;align=left;verticalAlign=top;fontSize=11;spacingLeft=8;spacingTop=6;rounded=1;whiteSpace=wrap;" value="&lt;b&gt;Routing Table Key:&lt;/b&gt;&lt;br&gt;&lt;font color=&#39;#82b366&#39;&gt;■&lt;/font&gt; Connected = network directly reachable on that interface (no next hop needed)&lt;br&gt;&lt;font color=&#39;#ffe6cc&#39;&gt;■&lt;/font&gt; Static = manually configured route with an explicit next-hop IP address&lt;br&gt;&lt;font color=&#39;#ffe6cc&#39;&gt;■&lt;/font&gt; Default = catch-all route (0.0.0.0/0) — sends all other traffic to gateway" vertex="1">
+          <mxGeometry height="80" width="440" x="40" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="iptitle" parent="1" style="text;html=1;strokeColor=none;fillColor=#1e4d78;fontColor=#ffffff;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;spacingLeft=10;rounded=1;" value="IP Address Assignment Summary" vertex="1">
+          <mxGeometry height="30" width="370" x="760" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="ip_h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e4d78;fontColor=#ffffff;strokeColor=#ffffff;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" value="Device | Interface | IP Address | Network | Role" vertex="1">
+          <mxGeometry height="30" width="370" x="760" y="488" as="geometry" />
+        </mxCell>
+        <mxCell id="ip_t" parent="1" style="text;html=1;strokeColor=#1e4d78;fillColor=#f9f9f9;align=left;verticalAlign=top;fontSize=11;whiteSpace=wrap;" value="&lt;table width=&#39;100%&#39; cellpadding=&#39;4&#39; cellspacing=&#39;0&#39; style=&#39;font-size:11px;&#39;&gt; &lt;tr style=&#39;background:#dae8fc;&#39;&gt;&lt;td&gt;&lt;b&gt;PC1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;eth0&lt;/td&gt;&lt;td&gt;60.91.0.2/24&lt;/td&gt;&lt;td&gt;LAN A&lt;/td&gt;&lt;td&gt;Workstation&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;&lt;b&gt;PC2&lt;/b&gt;&lt;/td&gt;&lt;td&gt;eth0&lt;/td&gt;&lt;td&gt;60.91.0.3/24&lt;/td&gt;&lt;td&gt;LAN A&lt;/td&gt;&lt;td&gt;Workstation&lt;/td&gt;&lt;/tr&gt; &lt;tr style=&#39;background:#dae8fc;&#39;&gt;&lt;td&gt;&lt;b&gt;PC3&lt;/b&gt;&lt;/td&gt;&lt;td&gt;eth0&lt;/td&gt;&lt;td&gt;60.91.0.4/24&lt;/td&gt;&lt;td&gt;LAN A&lt;/td&gt;&lt;td&gt;Workstation&lt;/td&gt;&lt;/tr&gt; &lt;tr style=&#39;background:#e1d5e7;&#39;&gt;&lt;td&gt;&lt;b&gt;R1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;eth0&lt;/td&gt;&lt;td&gt;60.91.0.1/24&lt;/td&gt;&lt;td&gt;LAN A&lt;/td&gt;&lt;td&gt;Router — LAN A gateway&lt;/td&gt;&lt;/tr&gt; &lt;tr style=&#39;background:#e1d5e7;&#39;&gt;&lt;td&gt;&lt;b&gt;R1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;eth1&lt;/td&gt;&lt;td&gt;10.0.0.1/24&lt;/td&gt;&lt;td&gt;WAN&lt;/td&gt;&lt;td&gt;Router — WAN interface&lt;/td&gt;&lt;/tr&gt; &lt;tr style=&#39;background:#e1d5e7;&#39;&gt;&lt;td&gt;&lt;b&gt;R2&lt;/b&gt;&lt;/td&gt;&lt;td&gt;eth0&lt;/td&gt;&lt;td&gt;10.0.0.2/24&lt;/td&gt;&lt;td&gt;WAN&lt;/td&gt;&lt;td&gt;Router — WAN interface&lt;/td&gt;&lt;/tr&gt; &lt;tr style=&#39;background:#e1d5e7;&#39;&gt;&lt;td&gt;&lt;b&gt;R2&lt;/b&gt;&lt;/td&gt;&lt;td&gt;eth1&lt;/td&gt;&lt;td&gt;23.45.0.1/24&lt;/td&gt;&lt;td&gt;LAN B&lt;/td&gt;&lt;td&gt;Router — LAN B gateway&lt;/td&gt;&lt;/tr&gt; &lt;tr style=&#39;background:#d5e8d4;&#39;&gt;&lt;td&gt;&lt;b&gt;PC4&lt;/b&gt;&lt;/td&gt;&lt;td&gt;eth0&lt;/td&gt;&lt;td&gt;23.45.0.2/24&lt;/td&gt;&lt;td&gt;LAN B&lt;/td&gt;&lt;td&gt;Workstation&lt;/td&gt;&lt;/tr&gt; &lt;tr style=&#39;background:#d5e8d4;&#39;&gt;&lt;td&gt;&lt;b&gt;PC5&lt;/b&gt;&lt;/td&gt;&lt;td&gt;eth0&lt;/td&gt;&lt;td&gt;23.45.0.3/24&lt;/td&gt;&lt;td&gt;LAN B&lt;/td&gt;&lt;td&gt;Workstation&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt;" vertex="1">
+          <mxGeometry height="212" width="370" x="760" y="518" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

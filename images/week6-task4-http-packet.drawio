@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="95869869d44e4ef19583aef02b56c4a8" name="Week 6 HTTP Packet Diagram">
+    <mxGraphModel dx="1771" dy="1024" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1060" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0B1F33;strokeColor=#0B1F33;fontColor=#FFFFFF;fontSize=22;fontStyle=1;align=center;verticalAlign=middle;shadow=1;" value="&lt;b&gt;Week 6 Task 4(d): HTTP Request Packet Diagram&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;Captured HTTP request for &lt;b&gt;/12326091.html&lt;/b&gt; from packet #139 in 12326091.pcapng&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="1320" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="client" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;shadow=1;strokeWidth=2;fillColor=#E3F2FD;strokeColor=#1565C0;fontColor=#0D47A1;fontFamily=Helvetica;fontSize=14;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;" value="&lt;b&gt;Client / Browser Host&lt;/b&gt;&lt;br&gt;&lt;br&gt;IP: &lt;b&gt;192.168.56.3&lt;/b&gt;&lt;br&gt;MAC: &lt;b&gt;08:00:27:18:74:5d&lt;/b&gt;&lt;br&gt;TCP source port: &lt;b&gt;49884&lt;/b&gt;&lt;br&gt;User-Agent: Firefox 140 on Linux" vertex="1">
+          <mxGeometry height="165" width="365" x="55" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="server" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;shadow=1;strokeWidth=2;fillColor=#E8F5E9;strokeColor=#2E7D32;fontColor=#1B5E20;fontFamily=Helvetica;fontSize=14;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;" value="&lt;b&gt;OpenWRT Web Server&lt;/b&gt;&lt;br&gt;&lt;br&gt;IP: &lt;b&gt;192.168.56.2&lt;/b&gt;&lt;br&gt;MAC: &lt;b&gt;08:00:27:4d:c6:c3&lt;/b&gt;&lt;br&gt;TCP destination port: &lt;b&gt;80&lt;/b&gt;&lt;br&gt;Service: HTTP web server" vertex="1">
+          <mxGeometry height="165" width="365" x="980" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="arrowLabel" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#FBC02D;fontColor=#5D4037;fontSize=15;align=center;verticalAlign=middle;shadow=1;" value="&lt;b&gt;HTTP GET request&lt;/b&gt;&lt;br&gt;Triggered when the link in index.html was clicked" vertex="1">
+          <mxGeometry height="80" width="400" x="500" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="client" style="endArrow=block;html=1;rounded=1;strokeWidth=4;strokeColor=#546E7A;" target="server" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="container" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontColor=#263238;fontSize=17;fontStyle=1;align=center;verticalAlign=middle;shadow=1;" value="&lt;b&gt;Captured Frame #139 — Total Captured Length: 442 Bytes&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;Frame length = Ethernet II header 14 B + IPv4 total length 428 B. Ethernet FCS is not included in the capture.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="1290" x="55" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="eth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;shadow=1;strokeWidth=2;fillColor=#E1F5FE;strokeColor=#0277BD;fontColor=#01579B;fontFamily=Helvetica;fontSize=14;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;" value="&lt;b&gt;Layer 2 — Ethernet II Header&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;&lt;b&gt;14 Bytes&lt;/b&gt;&lt;br&gt;Source MAC: 08:00:27:18:74:5d&lt;br&gt;Destination MAC: 08:00:27:4d:c6:c3&lt;br&gt;EtherType: 0x0800 = IPv4&lt;/font&gt;" vertex="1">
+          <mxGeometry height="185" width="305" x="55" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="ip" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;shadow=1;strokeWidth=2;fillColor=#E8F5E9;strokeColor=#2E7D32;fontColor=#1B5E20;fontFamily=Helvetica;fontSize=14;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;" value="&lt;b&gt;Layer 3 — IPv4 Header&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;&lt;b&gt;20 Bytes&lt;/b&gt;&lt;br&gt;Source IP: 192.168.56.3&lt;br&gt;Destination IP: 192.168.56.2&lt;br&gt;TTL: 64 | Protocol: TCP (6)&lt;br&gt;Total IP Length: 428 B&lt;/font&gt;" vertex="1">
+          <mxGeometry height="185" width="305" x="380" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="tcp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;shadow=1;strokeWidth=2;fillColor=#FFF3E0;strokeColor=#EF6C00;fontColor=#E65100;fontFamily=Helvetica;fontSize=14;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;" value="&lt;b&gt;Layer 4 — TCP Header&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;&lt;b&gt;32 Bytes&lt;/b&gt;&lt;br&gt;Source Port: 49884&lt;br&gt;Destination Port: 80&lt;br&gt;Flags: PSH, ACK&lt;br&gt;Seq: 550709694&lt;br&gt;Ack: 1840814439&lt;/font&gt;" vertex="1">
+          <mxGeometry height="185" width="305" x="705" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="http" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;shadow=1;strokeWidth=2;fillColor=#F3E5F5;strokeColor=#7B1FA2;fontColor=#4A148C;fontFamily=Helvetica;fontSize=14;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;" value="&lt;b&gt;Application — HTTP Request&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;&lt;b&gt;376 Bytes&lt;/b&gt;&lt;br&gt;GET /12326091.html HTTP/1.1&lt;br&gt;Host: 192.168.56.2&lt;br&gt;Referer: http://192.168.56.2/&lt;/font&gt;" vertex="1">
+          <mxGeometry height="185" width="315" x="1030" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="eth" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#78909C;fontSize=12;fontColor=#37474F;" target="ip" value="Encapsulates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="ip" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#78909C;fontSize=12;fontColor=#37474F;" target="tcp" value="Contains">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="tcp" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#78909C;fontSize=12;fontColor=#37474F;" target="http" value="Carries">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="calc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;shadow=1;strokeWidth=2;fillColor=#FAFAFA;strokeColor=#616161;fontColor=#212121;fontFamily=Helvetica;fontSize=12;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=8;" value="&lt;b&gt;Byte-size calculation used in the diagram&lt;/b&gt;&lt;br&gt;&lt;br&gt;Ethernet II header: &lt;b&gt;14 B&lt;/b&gt;&lt;br&gt;IPv4 header: &lt;b&gt;20 B&lt;/b&gt;&lt;br&gt;TCP header: &lt;b&gt;32 B&lt;/b&gt;&lt;br&gt;HTTP request payload: &lt;b&gt;376 B&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;b&gt;Total captured frame = 14 + 20 + 32 + 376 = 442 B&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;Note: the 4-byte Ethernet FCS is usually stripped before Wireshark capture; on-wire size would be 446 B if FCS is counted.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="275" width="400" x="55" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="headers" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;shadow=1;strokeWidth=2;fillColor=#FFFFFF;strokeColor=#6A1B9A;fontColor=#212121;fontFamily=Helvetica;fontSize=12;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=8;" value="&lt;b&gt;Important HTTP header values from packet #139&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Request line:&lt;/b&gt; GET /12326091.html HTTP/1.1&lt;br&gt;&lt;b&gt;Host:&lt;/b&gt; 192.168.56.2&lt;br&gt;&lt;b&gt;User-Agent:&lt;/b&gt; Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0&lt;br&gt;&lt;b&gt;Accept:&lt;/b&gt; text/html, application/xhtml+xml, application/xml; q=0.9, */*; q=0.8&lt;br&gt;&lt;b&gt;Accept-Language:&lt;/b&gt; en-US,en;q=0.5&lt;br&gt;&lt;b&gt;Accept-Encoding:&lt;/b&gt; gzip, deflate&lt;br&gt;&lt;b&gt;Connection:&lt;/b&gt; keep-alive&lt;br&gt;&lt;b&gt;Referer:&lt;/b&gt; http://192.168.56.2/&lt;br&gt;&lt;b&gt;Upgrade-Insecure-Requests:&lt;/b&gt; 1" vertex="1">
+          <mxGeometry height="275" width="500" x="485" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="interpret" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;shadow=1;strokeWidth=2;fillColor=#FFFDE7;strokeColor=#FBC02D;fontColor=#3E2723;fontFamily=Helvetica;fontSize=12;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=8;" value="&lt;b&gt;Address interpretation for journal explanation&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;MAC addresses&lt;/b&gt; identify the local Layer-2 devices on the VirtualBox/OpenWRT LAN segment.&lt;br&gt;&lt;br&gt;&lt;b&gt;IP addresses&lt;/b&gt; identify the source host and destination web server for this IPv4 packet.&lt;br&gt;&lt;br&gt;&lt;b&gt;TCP ports&lt;/b&gt; identify the browser process on the client and the HTTP service on the server.&lt;br&gt;&lt;br&gt;&lt;b&gt;HTTP request fields&lt;/b&gt; identify the application object requested, the host being contacted, the previous page through the Referer value, and the browser/OS information through User-Agent." vertex="1">
+          <mxGeometry height="275" width="330" x="1015" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#512DA8;fontColor=#311B92;fontSize=14;align=center;verticalAlign=middle;shadow=1;" value="&lt;b&gt;Summary:&lt;/b&gt; This request loaded the student page after the browser moved from the OpenWRT index page. The later JavaScript date/time button changes the page locally in the browser and does not require a new HTTP request." vertex="1">
+          <mxGeometry height="60" width="1290" x="55" y="960" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

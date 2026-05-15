@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="draw.io">
+  <diagram id="lana" name="Week4-Task3-LAN-A">
+    <mxGraphModel dx="1471" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="100" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontStyle=1;fontColor=#1e4d78;" value="Simple Switched LAN — Week 4 Task 3a" vertex="1">
+          <mxGeometry height="50" width="660" x="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="102" parent="1" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;fontSize=11;spacingLeft=6;rounded=1;" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;SW1 = Layer-2 Workgroup Switch&lt;br&gt;PC1–PC4 = End-host Workstations" vertex="1">
+          <mxGeometry height="70" width="230" x="780" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="110" parent="1" style="shape=mxgraph.cisco.switches.workgroup_switch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;fontSize=13;fontStyle=1;" value="SW1" vertex="1">
+          <mxGeometry height="50" width="69" x="551" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="111" parent="1" style="shape=mxgraph.cisco.computers_and_peripherals.pc;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;fontSize=13;" value="PC1" vertex="1">
+          <mxGeometry height="50" width="69" x="551" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="112" parent="1" style="shape=mxgraph.cisco.computers_and_peripherals.pc;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;fontSize=13;" value="PC2" vertex="1">
+          <mxGeometry height="50" width="69" x="820" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="113" parent="1" style="shape=mxgraph.cisco.computers_and_peripherals.pc;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;fontSize=13;" value="PC3" vertex="1">
+          <mxGeometry height="50" width="69" x="551" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="114" parent="1" style="shape=mxgraph.cisco.computers_and_peripherals.pc;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;fontSize=13;" value="PC4" vertex="1">
+          <mxGeometry height="50" width="69" x="280" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="200" edge="1" parent="1" source="110" style="endArrow=none;html=1;strokeWidth=2.5;strokeColor=#000000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="201" edge="1" parent="1" source="110" style="endArrow=none;html=1;strokeWidth=2.5;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="202" edge="1" parent="1" source="110" style="endArrow=none;html=1;strokeWidth=2.5;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="203" edge="1" parent="1" source="110" style="endArrow=none;html=1;strokeWidth=2.5;strokeColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
