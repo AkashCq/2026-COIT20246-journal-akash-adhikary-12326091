@@ -16,7 +16,7 @@ I completed the Knowledge Test for Week 4 — Network Technologies within the fi
 - **Questions:** 5
 - **Date Completed:** Thursday, 9 April 2026
 
-![Knowledge Test 04 Score](./images/week4-task1-knowledgetest.png)
+![Knowledge Test 04 Score](./images/week4-task1-knowladgetest.png)
 
 ---
 
