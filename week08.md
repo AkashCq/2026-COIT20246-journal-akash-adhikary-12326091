@@ -131,6 +131,7 @@ Welcome to Azure! My name is Akash Adhikary.
 ```
 
 ![Azure VM Web Page Successfully Updated With Name](./images/week8-task4-webpagenowaccessible.png)
+![Azure VM Web Page Successfully Updated With Name](./images/week8-task4-webpagenameadded.png)
 
 ### Interpretation
 
@@ -166,7 +167,3 @@ The consumer desktop PC has a much higher upfront cost, but it provides stronger
 The cloud VM is better when flexibility, remote access and short-term usage are more important than hardware ownership. The desktop PC is better when continuous long-term use, stronger local performance and full hardware control are required. From a cybersecurity and networking learning perspective, the Azure VM is valuable because it demonstrates real cloud infrastructure, public IP addressing, NSG rules and remote administration. The desktop PC is valuable as a stable local workstation for running tools, browsers, Packet Tracer, VirtualBox and documentation work.
 
 ---
-
-## Summary of Week 8 Learning
-
-Week 8 helped connect cloud computing theory with practical Azure deployment. I learned that a VM is only one part of a larger cloud resource set involving storage, public IP addressing, security rules and management tools. The most important technical lesson was that network access must be explicitly permitted through the NSG. The cost comparison also showed that cloud computing is not automatically cheaper; it depends on time period, workload duration, performance needs and whether the user values flexibility or ownership more.

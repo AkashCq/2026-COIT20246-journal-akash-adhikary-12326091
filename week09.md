@@ -108,6 +108,3 @@ The most useful activity for this unit was the **weekly GitHub journal**. The jo
 
 ---
 
-## Summary of Week 9 Learning
-
-Week 9 strengthened my understanding of cyber security from both management and technical perspectives. The activities showed that security is not limited to tools; it also involves risk assessment, control selection, governance and decision-making. The CIA Triad activity reinforced the purpose of core security controls, the risk activity connected threats and vulnerabilities to business impact, and the addressing activity corrected an important Layer 2/Layer 3 networking concept. Overall, Week 9 helped link earlier technical networking topics with later cyber security management concepts.

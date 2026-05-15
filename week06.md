@@ -9,7 +9,7 @@ Campus: Melbourne
 
 I completed the Week 6 Knowledge Test for **Internet Applications** during the tutorial session.
 
-![Knowledge Test 06 Score](./images/week6-task1-knowledgetest.png)
+![Knowledge Test 06 Score](./images/week6-task1-knowladgetest.png)
 
 ---
 
@@ -119,12 +119,7 @@ The diagram below represents packet **#139**, which is the HTTP request for my s
 
 ![HTTP Request Packet Diagram](./images/week6-task4-http-packet.png)
 
-Files uploaded:
 
-```text
-week6-task4-http-packet.png
-week6-task4-http-packet.drawio
-```
 
 ### Packet #139 Header and Size Details
 

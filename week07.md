@@ -85,12 +85,6 @@ I created a network diagram showing the Windows host, VirtualBox networking laye
 
 ![Week 7 OpenWRT Network Diagram](./images/week7-task4-networkdiagram.png)
 
-Files uploaded:
-
-```text
-week7-task4-networkdiagram.png
-week7-task4-networkdiagram.drawio
-```
 
 ### Diagram Explanation
 

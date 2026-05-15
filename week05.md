@@ -40,7 +40,6 @@ The `Get-NetRoute` output lists every route on every network adapter, grouped by
 
 Most entries fall into five distinct types, each explained below.
 
----
 
 #### Row Type 1 — `255.255.255.255/32` (Limited Broadcast), NextHop `0.0.0.0`
 
@@ -50,7 +49,6 @@ Most entries fall into five distinct types, each explained below.
 
 This entry appears on every active interface because any device may need to send a broadcast. The `256` route metric is the Windows default for auto-assigned routes.
 
----
 
 #### Row Type 2 — `224.0.0.0/4` (IPv4 Multicast Range), NextHop `0.0.0.0`
 
@@ -60,7 +58,6 @@ This entry appears on every active interface because any device may need to send
 
 The `/4` prefix covers the entire Class D multicast range. Like the broadcast entry, every active interface gets one of these so protocols such as IGMP (224.0.0.22), mDNS (224.0.0.251), and SSDP (239.255.255.250) can operate on each adapter.
 
----
 
 #### Row Type 3 — Subnet Network Route `192.168.x.0/24`, NextHop `0.0.0.0`
 
@@ -77,7 +74,6 @@ Similar rows appear for all virtual and physical adapters:
 | ifIndex 5 | 192.168.81.0/24 | VMware VMnet1 (Host-Only) |
 | ifIndex 11 | 192.168.56.0/24 | VirtualBox Host-Only |
 
----
 
 #### Row Type 4 — Host Route `192.168.x.1/32`, NextHop `0.0.0.0`
 
@@ -85,7 +81,6 @@ Similar rows appear for all virtual and physical adapters:
 
 **Reading:** "Packets addressed to exactly 192.168.179.1 (the interface's own IP address) are handled locally on interface 4 — this is a /32 host route that keeps traffic destined for the machine's own address on the local stack."
 
----
 
 #### Row Type 5 — Subnet Directed Broadcast `192.168.x.255/32`, NextHop `0.0.0.0`
 
@@ -93,7 +88,6 @@ Similar rows appear for all virtual and physical adapters:
 
 **Reading:** "Any packet sent to the directed broadcast address 192.168.179.255 is delivered to all hosts on the 192.168.179.0/24 subnet via interface 4, without involving a router."
 
----
 
 #### Additional Notable Routes (below visible area in screenshot)
 
@@ -148,9 +142,7 @@ The diagram below shows all five PCs, two 8-port Gigabit Ethernet switches (SW1,
 
 ![IP Network Design Diagram](./images/week5-task3-network.png)
 
-**Files uploaded:**
-- `week5-task3-network.png` — exported diagram image
-- `week5-task3-network.drawio` — original draw.io file
+
 
 ---
 
@@ -160,9 +152,7 @@ The routing tables for all devices are shown below. The simplified format matche
 
 ![Routing Tables](./images/week5-task3-routing.png)
 
-**Files uploaded:**
-- `week5-task3-routing.png` — routing table diagram image
-- `week5-task3-routing.drawio` — original draw.io file
+
 
 #### Summary of routing tables (text format)
 
@@ -204,9 +194,7 @@ The routing tables for all devices are shown below. The simplified format matche
 
 ![ICMP Packet Diagram](./images/week5-task3-packet.png)
 
-**Files uploaded:**
-- `week5-task3-packet.png` — packet diagram image
-- `week5-task3-packet.drawio` — original draw.io file
+
 
 #### Addresses in the Packet
 
@@ -330,5 +318,4 @@ Although both networks use SingTel Optus as the ISP, they are separate network c
 Like the exercise in Week 4 (Task 7), the MAC address of my device or router cannot be found by these tools. MAC addresses are Layer 2 addresses and only travel within local network segments. By the time traffic exits the home router or campus gateway and reaches the internet, Ethernet frames are entirely rebuilt at each hop — the original MAC address is never transmitted across network boundaries and is therefore invisible to any external lookup tool.
 
 ---
-
-*All draw.io files and exported PNG images have been uploaded to the GitHub journal repository under the `images/` folder.*
+s

@@ -27,29 +27,16 @@ I formed and registered my project group during the tutorial. We set up the shar
 ### Group Members
 
 - Akash Adhikary (12326091)
-- [Group Member 2 — Name and ID]
-- [Group Member 3 — Name and ID]
+- Vijay Kumar Nethi (12328433)
 
 ### GitHub Repository URL
 
-`https://github.com/[username]/COIT20246-Project`
+`Not Yet Created`
 
-### plan.md Summary
-
-The `plan.md` file in our GitHub repository contains:
-- Communication method: Microsoft Teams group chat for day-to-day updates
-- Meeting schedule: Weekly catch-up every Wednesday before the Thursday tutorial
-- Task allocation and deadlines aligned to the project specification milestones
-
-In your journal:
-- Names of group members listed above
-- GitHub repository URL listed above
-
----
 
 ## Task 3. Draw Network Diagrams
 
-I used **diagrams.net (draw.io)** to draw both network diagrams. Cisco network icons were used for all devices and the diagrams were laid out neatly with labels on each device. My name appears on both diagrams.
+I used **diagrams.net (draw.io)** to draw both network diagrams. Cisco network icons were used for all devices and the diagrams were laid out neatly with labels on each device.
 
 ---
 
@@ -63,9 +50,6 @@ Device labels used:
 
 ![LAN-A Network Diagram](./images/week4-task3-lana.png)
 
-**Files uploaded to journal:**
-- `week4-task3-lana.png` — exported diagram image
-- `week4-task3-lana.drawio` — original draw.io file
 
 ---
 
@@ -83,9 +67,6 @@ Total devices: 3 switches + 8 PCs = 11 devices.
 
 ![LAN-B Network Diagram](./images/week4-task3-lanb.png)
 
-**Files uploaded to journal:**
-- `week4-task3-lanb.png` — exported diagram image
-- `week4-task3-lanb.drawio` — original draw.io file
 
 ---
 
@@ -124,9 +105,6 @@ Both devices are on the same `/24` subnet (`192.168.56.0/24`), so all traffic be
 
 ![Ping Network Diagram](./images/week4-task4-ping.png)
 
-**Files uploaded to journal:**
-- `week4-task4-ping.png` — network diagram image
-- `week4-task4-ping.drawio` — original draw.io file
 
 ---
 
@@ -156,9 +134,7 @@ The diagram below shows the complete structure of the first ARP packet (ARP Requ
 
 ![ARP Packet Encapsulation Diagram](./images/week4-task4-arp-packet.png)
 
-**Files uploaded to journal:**
-- `week4-task4-arp-packet.png` — ARP packet diagram image
-- `week4-task4-arp-packet.drawio` — original draw.io file
+
 
 **Packet Size Breakdown:**
 
@@ -244,9 +220,7 @@ The diagram below shows the first ICMP Echo Request with its full three-layer en
 
 ![ICMP Packet Encapsulation Diagram](./images/week4-task4-icmp-packet.png)
 
-**Files uploaded to journal:**
-- `week4-task4-icmp-packet.png` — ICMP packet diagram image
-- `week4-task4-icmp-packet.drawio` — original draw.io file
+
 
 **Complete Packet Size Breakdown:**
 
@@ -330,5 +304,3 @@ The VirtualBox Host-Only interface (`192.168.56.1`, index 0xb) only shows static
 These are not learned via ARP — they are **permanently assigned** by Windows. The broadcast address `ff-ff-ff-ff-ff-ff` is always mapped to the subnet broadcast IP. The `01-00-5e-xx-xx-xx` addresses are **IPv4 multicast MAC addresses** used by protocols like IGMP (`224.0.0.22`), mDNS (`224.0.0.251`), and SSDP (`239.255.255.250`). They appear on every interface and are not associated with any single physical device.
 
 ---
-
-*All draw.io files and exported PNG diagram images have been uploaded to the GitHub journal repository under the `images/` folder.*
